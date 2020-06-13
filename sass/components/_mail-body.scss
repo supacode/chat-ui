@@ -1,0 +1,145 @@
+.mail {
+  padding: 3rem 4rem;
+  width: 47%;
+  background: #fff;
+  height: 100vh;
+  &__options {
+    padding-bottom: 1.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      path,
+      rect,
+      circle,
+      line {
+        transition: 0.4s ease-out;
+
+        stroke: #a4a8b5;
+        fill: #a4a8b5;
+      }
+      &:hover {
+        path,
+        rect,
+        circle,
+        line {
+          fill: $accent;
+          stroke: $accent;
+        }
+      }
+    }
+
+    &--left {
+      li {
+        margin-right: 1rem;
+      }
+    }
+    &--right {
+      li {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.msg-main {
+  &__container {
+    overflow-y: scroll;
+    height: 90%;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    &--subject {
+      display: flex;
+      margin: 2rem 0;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 130%;
+      line-height: 1.5;
+    }
+    &--img {
+      width: 50px;
+      height: 50px;
+      margin-top: 1rem;
+      margin-right: 2rem;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+    &--time {
+      font-size: 0.9rem;
+      color: #bebebe;
+      right: 0;
+    }
+  }
+
+  &__body {
+    line-height: 2;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.social {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__twitter {
+    &--icon {
+      path {
+        fill: #1da1f2;
+      }
+    }
+  }
+
+  &__email {
+    &--icon {
+      path {
+        fill: $accent;
+        stroke: $accent;
+      }
+    }
+  }
+  &__github {
+    &--icon {
+      path {
+        fill: #333;
+      }
+    }
+  }
+
+  &__linkedin {
+    &--icon {
+      path {
+        fill: #1d81be;
+      }
+    }
+  }
+
+  &__supacode {
+    &--icon {
+      path {
+        fill: #333;
+      }
+    }
+  }
+}

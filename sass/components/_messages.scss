@@ -1,0 +1,120 @@
+.messages {
+	background: $messages-bg;
+	width: 35%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	&__search {
+		margin-bottom: 2rem;
+		position: relative;
+		background: #ebecf2;
+		border-radius: 5px;
+
+		&--box {
+			background: transparent;
+			width: 100%;
+			padding: 1rem;
+			transition: 0.4s ease-out;
+			border: {
+				bottom: 2px solid transparent;
+				radius: 5px;
+			}
+
+			&:focus {
+				background: #fcfcfd;
+				border-bottom-color: $accent;
+				&::placeholder {
+					color: $accent;
+				}
+			}
+			&::placeholder {
+				color: #c2c5ce;
+			}
+		}
+		&--btn {
+			position: absolute;
+			right: 1rem;
+			top: 25%;
+			height: 30px;
+			width: 30px;
+			svg path {
+				fill: #c2c5ce;
+			}
+		}
+	}
+	&__container {
+		overflow-y: scroll;
+	}
+}
+
+.message {
+	background: #fcfcfd;
+	padding: 2rem;
+	border-radius: 5px;
+	font-size: 0.9rem;
+	margin-right: 1rem;
+	position: relative;
+	margin-bottom: 1rem;
+	&__active,
+	&:hover {
+		background: #fff;
+	}
+	&:hover {
+		z-index: 100;
+	}
+
+	&__label {
+		border: {
+			width: 2px;
+			style: solid;
+		}
+		position: absolute;
+		height: 20px;
+		left: 0;
+	}
+
+	&__header {
+		display: flex;
+		margin-bottom: 1.5rem;
+		align-self: center;
+		color: #333;
+		a:hover {
+			color: $accent;
+		}
+	}
+
+	&__thumb {
+		width: 50px;
+		height: 50px;
+		margin-right: 1rem;
+		&--img {
+			border-radius: 50%;
+		}
+	}
+
+	&__sender {
+		margin-bottom: 0.5rem;
+		color: inherit;
+		font: {
+			size: 1.1rem;
+			weight: bolder;
+		}
+	}
+
+	&__subject {
+		font-weight: 550;
+	}
+
+	&__time {
+		font-size: 0.75rem;
+		color: #9095a2;
+		position: absolute;
+		right: 1rem;
+		text-align: right;
+	}
+
+	&__text {
+		color: #9095a2;
+		font-size: 0.9rem;
+	}
+}

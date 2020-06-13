@@ -1,0 +1,42 @@
+.custom-scrollbar {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background: #ebecf2;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #c2c5ce;
+		transition: 0.5s ease-out;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: darken($color: #c2c2c2, $amount: 20);
+	}
+}
+
+.night:checked + .app {
+	.custom-scrollbar {
+		&::-webkit-scrollbar {
+			width: 8px;
+		}
+		&::-webkit-scrollbar-track {
+			background: darken($night-secondary, $amount: 5);
+		}
+		&::-webkit-scrollbar-thumb {
+			background: darken($night-accent, 15);
+			transition: 0.5s ease-out;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background: $night-accent;
+		}
+	}
+}
+
+@keyframes growX {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}

@@ -1,0 +1,62 @@
+.night:checked + .app {
+	.messages {
+		background: $night-messages-bg;
+		&__search {
+			background: $night-secondary;
+
+			&--box {
+				background: transparent;
+				border-bottom: 2px solid transparent;
+
+				&:focus {
+					background: $night-secondary;
+					border-bottom-color: $night-accent;
+					&::placeholder {
+						color: $night-accent;
+					}
+				}
+				&::placeholder {
+					color: $night-accent;
+				}
+			}
+			&--btn {
+				svg path {
+					fill: $night-accent;
+					stroke: $night-accent;
+				}
+			}
+		}
+
+		&__container {
+			overflow-y: scroll;
+		}
+
+		.message {
+			background: $night-secondary;
+
+			&__active,
+			&:hover {
+				background: darken($night-secondary, 5);
+			}
+
+			&__header {
+				a:hover {
+					color: $night-accent;
+				}
+			}
+
+			&__sender {
+				color: $night-text;
+			}
+
+			&__time,
+			&__subject {
+				color: $night-text;
+			}
+
+			&__text {
+				color: $night-text;
+			}
+		}
+	}
+}

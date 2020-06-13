@@ -1,0 +1,170 @@
+.main-nav {
+	width: 18%;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	&__compose-btn {
+		background: $accent;
+		color: #fff;
+		padding: 1rem 2rem;
+		width: 100%;
+		border-radius: 5px;
+		display: flex;
+		justify-content: space-between;
+		transition: 0.4s ease-out background;
+		svg {
+			width: 20px;
+			height: 20px;
+			margin-right: 2rem;
+			path {
+				fill: #fff;
+			}
+		}
+		&:hover {
+			background: darken($color: $accent, $amount: 20);
+		}
+	}
+
+	&__section {
+		padding: 1.2rem 2rem;
+	}
+}
+
+.primary-nav {
+	border-bottom: 1px solid $side-bar-links;
+
+	ul li {
+		margin-bottom: 0.5rem;
+	}
+	ul li a {
+		color: inherit;
+		display: flex;
+		align-items: center;
+		position: relative;
+		color: darken($body-bg, 50);
+		display: block;
+		padding: 0.5rem 1rem;
+
+		span {
+			position: relative;
+			z-index: 100;
+		}
+		&:hover {
+			span svg,
+			span {
+				color: #fff;
+
+				path,
+				circle,
+				polyline,
+				rect,
+				line {
+					fill: #fff;
+					stroke: #fff;
+				}
+			}
+			&:after {
+				content: '';
+				top: 0;
+				left: 0;
+				height: 100%;
+				background: $accent;
+				border-radius: 5px;
+				width: 100%;
+				position: absolute;
+				animation: growX 0.3s;
+			}
+		}
+	}
+
+	ul li a svg {
+		width: 20px;
+		height: 20px;
+		vertical-align: text-bottom;
+		margin-right: 1rem;
+		path,
+		circle,
+		polyline,
+		rect,
+		line {
+			stroke: $light-text;
+		}
+	}
+
+	&__badge {
+		color: $accent;
+		margin-right: 1rem;
+		font-weight: 550;
+		float: right;
+	}
+}
+
+// Label
+.label {
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+		font-weight: bold;
+		&--icon {
+			position: relative;
+			width: 30px;
+			height: 30px;
+			svg {
+				display: block;
+				margin: auto;
+				path {
+					stroke: darken($color: $side-bar-links, $amount: 30);
+				}
+			}
+		}
+	}
+
+	&__item {
+		margin-bottom: 1.5rem;
+		&:hover {
+			a {
+				transition: 0.4s ease-out;
+				color: $accent;
+			}
+		}
+	}
+	&__item a {
+		color: #636363;
+	}
+	&__icon {
+		height: 12px;
+		width: 12px;
+		display: inline-block;
+		margin-right: 1rem;
+		border-radius: 50%;
+		border: 3px solid transparent;
+
+		&--family {
+			border-color: #f38453;
+		}
+		&--clients {
+			border-color: #009eff;
+		}
+		&--work {
+			border-color: #5b64e3;
+		}
+		&--friends {
+			border-color: #e3496c;
+		}
+	}
+}
+
+// Toggle theme
+.theme {
+	margin: auto;
+	&__toggle {
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		&:after {
+			content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 512 512'%3E%3Cpath d='M160,136c0-30.62,4.51-61.61,16-88C99.57,81.27,48,159.32,48,248c0,119.29,96.71,216,216,216,88.68,0,166.73-51.57,200-128-26.39,11.49-57.38,16-88,16C256.71,352,160,255.29,160,136Z' style='fill:none;stroke:%23" + 'e54065' + ";stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/%3E%3C/svg%3E");
+		}
+	}
+}
