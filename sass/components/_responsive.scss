@@ -1,56 +1,60 @@
 @media (max-width: 1000px) {
-	.app {
-		flex-direction: column;
-	}
+  .app {
+    flex-direction: column;
+  }
 
-	.messages,
-	.main-nav,
-	.mail {
-		width: 100%;
-	}
+  .messages,
+  .main-nav,
+  .mail {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+  }
 
-	.mail {
-		&__options {
-			svg {
-				width: 20px;
-				height: 20px;
-			}
-		}
-	}
+  .mail {
+    padding: 2rem;
+    &__options {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 
-	// Main nav
-	.label {
-		display: flex;
-		justify-content: space-between;
-		overflow-x: scroll;
-		&__item {
-			margin-right: 2rem;
-		}
-	}
+  // Main nav
+  .label {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    &__item {
+      margin-right: 2rem;
+    }
+  }
 
-	.theme {
-		// background: $accent;
-		border-radius: 50%;
-		position: fixed;
-		right: 1rem;
-		bottom: 1rem;
-		padding: 0.5rem;
-		z-index: 10;
-	}
-	.night:checked + .app {
-		.theme {
-			background: $night-secondary;
-		}
-	}
+  .theme {
+    // background: $accent;
+    border-radius: 50%;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem;
+    z-index: 10;
+  }
+  .night:checked + .app {
+    .theme {
+      background: $night-secondary;
+    }
+  }
 }
 
 @media (max-height: 650px) {
-	.main-nav {
-		// overflow-y: scroll;
-		height: auto;
+  .main-nav {
+    // overflow-y: scroll;
+    height: auto;
 
-		&::-webkit-scrollbar {
-			width: 10px;
-		}
-	}
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
 }

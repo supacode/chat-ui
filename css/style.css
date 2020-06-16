@@ -887,6 +887,12 @@ body {
   .main-nav,
   .mail {
     width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+  }
+  .mail {
+    padding: 2rem;
   }
   .mail__options svg {
     width: 20px;
