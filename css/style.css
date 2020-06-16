@@ -112,10 +112,15 @@ body {
   height: 100vh;
   width: 18%;
   padding-top: 1rem;
+  position: fixed;
 }
 
-.main-nav::-webkit-scrollbar {
-  width: 0;
+.main-nav:hover {
+  overflow-y: scroll;
+}
+
+.main-nav:hover .main-nav::-webkit-scrollbar {
+  width: 6;
 }
 
 .main-nav__compose-btn {
@@ -130,8 +135,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: 0.4s ease-out background;
-  transition: 0.4s ease-out background;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .main-nav__compose-btn svg {
@@ -199,7 +204,7 @@ body {
 }
 
 .primary-nav ul li a:hover:after {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   height: 100%;
@@ -319,9 +324,12 @@ body {
   background: #f5f6fa;
   width: 35%;
   padding: 2rem;
+  height: 100vh;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 18%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -475,6 +483,9 @@ body {
 .mail {
   padding: 3rem 4rem;
   width: 47%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
   background: #fff;
 }
 
