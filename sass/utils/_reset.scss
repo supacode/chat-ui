@@ -1,16 +1,16 @@
 *:before,
 *:after,
 * {
-	box-sizing: border-box;
-	font: {
-		size: 100%;
-		family: inherit;
-	}
-	max-width: 100%;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
+  box-sizing: border-box;
+  font: {
+    size: 100%;
+    family: inherit;
+  }
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
 h1,
@@ -19,18 +19,18 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 a,
 input[type='submit'],
 button {
-	background: none;
-	cursor: pointer;
-	text-decoration: none;
-	color: inherit;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }

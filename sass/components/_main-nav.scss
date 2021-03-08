@@ -2,14 +2,8 @@
   height: 100vh;
   width: $sidebar-width;
   padding-top: 1rem;
-  position: fixed;
+  overflow-y: scroll;
 
-  &:hover {
-    overflow-y: scroll;
-    .main-nav::-webkit-scrollbar {
-      width: 6;
-    }
-  }
   &__compose-btn {
     background: $accent;
     color: #fff;

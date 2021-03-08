@@ -1,93 +1,93 @@
 .night:checked + .app {
-	.main-nav {
-		background: $night-secondary;
-		&__compose-btn {
-			background: $night-accent;
-			&:hover {
-				background: darken($color: $night-accent, $amount: 20);
-			}
-		}
-	}
+  .main-nav {
+    background: $night-secondary;
+    &__compose-btn {
+      background: $night-accent;
+      &:hover {
+        background: darken($color: $night-accent, $amount: 20);
+      }
+    }
+  }
 
-	.primary-nav {
-		border-bottom: 1px solid #24273b;
+  .primary-nav {
+    border-bottom: 1px solid #24273b;
 
-		ul li {
-			margin-bottom: 0.5rem;
-		}
-		ul li a {
-			color: inherit;
-			display: flex;
-			align-items: center;
-			position: relative;
-			color: $night-text;
-			display: block;
-			padding: 0.5rem 1rem;
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    ul li a {
+      color: inherit;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: $night-text;
+      display: block;
+      padding: 0.5rem 1rem;
 
-			&:hover {
-				span svg,
-				span {
-					color: #fff;
-					path,
-					circle,
-					polyline,
-					rect,
-					line {
-						fill: #fff;
-						stroke: #fff;
-					}
-				}
-				&:after {
-					background: $night-accent;
-				}
-			}
-		}
+      &:hover {
+        span svg,
+        span {
+          color: #fff;
+          path,
+          circle,
+          polyline,
+          rect,
+          line {
+            fill: #fff;
+            stroke: #fff;
+          }
+        }
+        &:after {
+          background: $night-accent;
+        }
+      }
+    }
 
-		ul li a svg {
-			width: 20px;
-			height: 20px;
-			vertical-align: text-bottom;
-			margin-right: 1rem;
-			path,
-			circle,
-			polyline,
-			rect,
-			line {
-				fill: $night-text;
-				stroke: $night-text;
-			}
-		}
+    ul li a svg {
+      width: 20px;
+      height: 20px;
+      vertical-align: text-bottom;
+      margin-right: 1rem;
+      path,
+      circle,
+      polyline,
+      rect,
+      line {
+        fill: $night-text;
+        stroke: $night-text;
+      }
+    }
 
-		&__badge {
-			color: $night-accent;
-		}
-	}
+    &__badge {
+      color: $night-accent;
+    }
+  }
 
-	// Label
-	.label {
-		&__title {
-			color: $night-text;
-		}
-		&__item {
-			margin-bottom: 1.5rem;
-			&:hover {
-				a {
-					transition: 0.4s ease-out;
-					color: $night-accent;
-				}
-			}
-		}
-		&__item a {
-			color: $night-text;
-		}
-	}
+  // Label
+  .label {
+    &__title {
+      color: $night-text;
+    }
+    &__item {
+      margin-bottom: 1.5rem;
+      &:hover {
+        a {
+          transition: 0.4s ease-out;
+          color: $night-accent;
+        }
+      }
+    }
+    &__item a {
+      color: $night-text;
+    }
+  }
 
-	// Toggle theme
-	.theme {
-		&__toggle {
-			&:after {
-				content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 512 512'%3E% %3Cline x1='256' y1='48' x2='256' y2='96' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='256' y1='416' x2='256' y2='464' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='403.08' y1='108.92' x2='369.14' y2='142.86' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='142.86' y1='369.14' x2='108.92' y2='403.08' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='464' y1='256' x2='416' y2='256' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='96' y1='256' x2='48' y2='256' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='403.08' y1='403.08' x2='369.14' y2='369.14' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='142.86' y1='142.86' x2='108.92' y2='108.92' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Ccircle cx='256' cy='256' r='80' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3C/svg%3E");
-			}
-		}
-	}
+  // Toggle theme
+  .theme {
+    &__toggle {
+      &:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 512 512'%3E% %3Cline x1='256' y1='48' x2='256' y2='96' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='256' y1='416' x2='256' y2='464' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='403.08' y1='108.92' x2='369.14' y2='142.86' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='142.86' y1='369.14' x2='108.92' y2='403.08' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='464' y1='256' x2='416' y2='256' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='96' y1='256' x2='48' y2='256' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='403.08' y1='403.08' x2='369.14' y2='369.14' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Cline x1='142.86' y1='142.86' x2='108.92' y2='108.92' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3Ccircle cx='256' cy='256' r='80' style='fill:none;stroke:%23" + '0967a0' + ";stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/%3E%3C/svg%3E");
+      }
+    }
+  }
 }

@@ -1,10 +1,9 @@
-@import "utils/variables";
-@import "utils/reset";
+@import 'utils/variables';
+@import 'utils/reset';
 
 body {
   font: 90% $font-stack;
-  //   background: $body-bg;
-
+  background: $body-bg;
   margin: auto;
   overflow-x: hidden;
 }
@@ -14,27 +13,28 @@ body {
   margin: auto;
   display: flex;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.02);
+  flex-shrink: 0;
 }
 
 .night {
   display: none;
 }
 // Utility classes
-@import "utils/abstracts";
+@import 'utils/abstracts';
 
 // Main nav
-@import "components/main-nav";
+@import 'components/main-nav';
 
 // Messages
-@import "components/messages";
+@import 'components/messages';
 
 // Mail body
-@import "components/mail-body";
+@import 'components/mail-body';
 
 // Night theme
-@import "night-theme/main-nav";
-@import "night-theme/messages";
-@import "night-theme/mail-body";
+@import 'night-theme/main-nav';
+@import 'night-theme/messages';
+@import 'night-theme/mail-body';
 
 // Responsive media queries
-@import "components/responsive";
+@import 'components/responsive';

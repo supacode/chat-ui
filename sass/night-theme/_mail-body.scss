@@ -1,89 +1,89 @@
 .night:checked + .app {
-	.mail {
-		background: $night-secondary;
-		&__options {
-			svg {
-				path,
-				rect,
-				circle,
-				line {
-					stroke: $night-accent;
-					fill: $night-accent;
-				}
-				&:hover {
-					path,
-					rect,
-					circle,
-					line {
-						fill: darken($night-accent, 20);
-						stroke: darken($night-accent, 20);
-					}
-				}
-			}
-		}
-	}
+  .mail {
+    background: $night-secondary;
+    &__options {
+      svg {
+        path,
+        rect,
+        circle,
+        line {
+          stroke: $night-accent;
+          fill: $night-accent;
+        }
+        &:hover {
+          path,
+          rect,
+          circle,
+          line {
+            fill: darken($night-accent, 20);
+            stroke: darken($night-accent, 20);
+          }
+        }
+      }
+    }
+  }
 
-	.msg-main {
-		color: $night-text;
-	}
+  .msg-main {
+    color: $night-text;
+  }
 
-	.social {
-		margin: 2rem 0;
-		display: flex;
-		justify-content: space-around;
-		svg {
-			width: 30px;
-			height: 30px;
-		}
+  .social {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
 
-		&__twitter {
-			&--icon {
-				path {
-					fill: $night-text;
-				}
-			}
-		}
+    &__twitter {
+      &--icon {
+        path {
+          fill: $night-text;
+        }
+      }
+    }
 
-		&__github {
-			&--icon {
-				path {
-					fill: $night-text;
-				}
-			}
-		}
+    &__github {
+      &--icon {
+        path {
+          fill: $night-text;
+        }
+      }
+    }
 
-		&__email {
-			&--icon {
-				path {
-					fill: $night-text;
-					stroke: $night-text;
-				}
-			}
-		}
+    &__email {
+      &--icon {
+        path {
+          fill: $night-text;
+          stroke: $night-text;
+        }
+      }
+    }
 
-		&__linkedin {
-			&--icon {
-				path {
-					fill: $night-text;
-				}
-			}
-		}
+    &__linkedin {
+      &--icon {
+        path {
+          fill: $night-text;
+        }
+      }
+    }
 
-		&__supacode {
-			&--icon {
-				path {
-					fill: $night-text;
-				}
-			}
-		}
+    &__supacode {
+      &--icon {
+        path {
+          fill: $night-text;
+        }
+      }
+    }
 
-		&__codepen {
-			&--icon {
-				path {
-					fill: $night-text;
-					stroke: $night-text;
-				}
-			}
-		}
-	}
+    &__codepen {
+      &--icon {
+        path {
+          fill: $night-text;
+          stroke: $night-text;
+        }
+      }
+    }
+  }
 }
